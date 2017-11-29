@@ -5,7 +5,7 @@ Great amount of filters and other effects. Photos are uploaded from library. Edi
 
 UI will look similar to this one http://joxi.ru/1A5djJ4HKpowM2
 
-The UML diagram is very simple for this app http://joxi.ru/KAgeQJpHgkWJom
+The UML diagram is very simple for this app https://ibb.co/eHwh5G
 
 Plan of works:
 

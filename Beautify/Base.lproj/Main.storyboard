@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vph-UP-oqI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First Page Controller-->
+        <scene sceneID="z46-u6-GTr">
+            <objects>
+                <viewController storyboardIdentifier="FirstPageController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vig-qc-DIR" customClass="FirstPageController" customModule="Beautify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4me-pp-2XB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="welcometo" translatesAutoresizingMaskIntoConstraints="NO" id="Z8Z-5f-Drw">
+                                <rect key="frame" x="112" y="83" width="149" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appTitle" translatesAutoresizingMaskIntoConstraints="NO" id="uxd-0A-tsU">
+                                <rect key="frame" x="102" y="518" width="171" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="butterfly" translatesAutoresizingMaskIntoConstraints="NO" id="SkS-SV-wGw">
+                                <rect key="frame" x="66" y="203" width="243" height="261"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84404188394546509" green="0.99153178930282593" blue="0.99413281679153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="DIK-rF-V6V"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="SkS-SV-wGw" id="51T-vT-CRh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bok-Z0-r54" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1658" y="758"/>
+        </scene>
+        <!--Second Page Controller-->
+        <scene sceneID="0VS-jg-gVp">
+            <objects>
+                <viewController storyboardIdentifier="SecondPageController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FsB-zW-LPC" customClass="SecondPageController" customModule="Beautify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MA6-eA-ihZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="butterflyCropped" translatesAutoresizingMaskIntoConstraints="NO" id="Iwt-ci-aPr">
+                                <rect key="frame" x="0.0" y="194" width="132" height="278"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photoeEditApp" translatesAutoresizingMaskIntoConstraints="NO" id="ceT-er-8RS">
+                                <rect key="frame" x="82" y="59" width="210" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="effectsAndFilters" translatesAutoresizingMaskIntoConstraints="NO" id="B91-8g-ewy" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="140" y="303" width="219" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="spring"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="makeitBeauty" translatesAutoresizingMaskIntoConstraints="NO" id="URA-hi-Vnt" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="170" y="346" width="189" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="fadeIn"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="spring"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8771291971206665" green="0.97750645875930786" blue="0.79727429151535034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Jvc-fd-IWt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l21-df-nYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-914" y="758"/>
+        </scene>
+        <!--Third Page Controller-->
+        <scene sceneID="2Oo-Nq-8vI">
+            <objects>
+                <viewController storyboardIdentifier="ThirdPageController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f3m-MX-2Vd" customClass="ThirdPageController" customModule="Beautify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lXK-GF-zPp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="getStarted" translatesAutoresizingMaskIntoConstraints="NO" id="VSU-ZY-70o">
+                                <rect key="frame" x="109" y="312" width="157" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="butterflyCroppedTop" translatesAutoresizingMaskIntoConstraints="NO" id="R2U-0p-2ae">
+                                <rect key="frame" x="0.0" y="539" width="375" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.9883386492729187" blue="0.8072999119758606" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="gL0-Tq-2hg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4R-sA-Xra" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-151" y="758"/>
+        </scene>
+        <!--Tools View Controller-->
+        <scene sceneID="wD6-I4-7NN">
+            <objects>
+                <viewController storyboardIdentifier="ToolsViewController" id="mQq-Ph-UY1" customClass="ToolsViewController" customModule="Beautify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bo3-aE-aRa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oN9-eY-kQg">
+                                <rect key="frame" x="20" y="65" width="335" height="374"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PXr-WY-2oi">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="374"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N3u-co-Hld">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="374"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87712919710000004" green="0.97750645879999998" blue="0.79727429149999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wGn-ki-80C">
+                                <rect key="frame" x="-3" y="547" width="380" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oN9-eY-kQg" firstAttribute="top" secondItem="yJ3-Ah-CcZ" secondAttribute="top" constant="53" id="JTn-dX-Ctg"/>
+                            <constraint firstItem="yJ3-Ah-CcZ" firstAttribute="trailing" secondItem="oN9-eY-kQg" secondAttribute="trailing" constant="20" id="dzV-Nj-Miy"/>
+                            <constraint firstItem="oN9-eY-kQg" firstAttribute="leading" secondItem="yJ3-Ah-CcZ" secondAttribute="leading" constant="20" id="pKw-OE-Pcm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yJ3-Ah-CcZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="oN9-eY-kQg" id="E0f-d5-5Rv"/>
+                        <outlet property="imageToFilter" destination="N3u-co-Hld" id="OPG-sB-gRF"/>
+                        <outlet property="originalImage" destination="PXr-WY-2oi" id="jg3-X0-ONW"/>
+                        <outlet property="toolsScrollView" destination="wGn-ki-80C" id="uCG-mN-hKg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nh-We-8mW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="624.79999999999995" y="757.87106446776613"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="sJ2-b3-bBp">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Vph-UP-oqI" customClass="PageViewController" customModule="Beautify" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MCj-Cp-Ajt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-914" y="52"/>
+        </scene>
+        <!--Photo Pick View Controller-->
+        <scene sceneID="XvK-H5-ev6">
+            <objects>
+                <viewController storyboardIdentifier="PhotoPickViewController" id="ARR-os-E7b" customClass="PhotoPickViewController" customModule="Beautify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XwJ-Su-yAX"/>
+                        <viewControllerLayoutGuide type="bottom" id="S7l-3N-enQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LjN-cH-cCb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0p-dX-JQb">
+                                <rect key="frame" x="87.5" y="617" width="200" height="30"/>
+                                <state key="normal" title="Photo From Gallery"/>
+                                <connections>
+                                    <action selector="actionClickOnGallery:" destination="ARR-os-E7b" eventType="touchUpInside" id="Y07-4w-q0H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLb-dc-kS8">
+                                <rect key="frame" x="87.5" y="568" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="lHa-Xz-jrO"/>
+                                </constraints>
+                                <state key="normal" title="Photo From Camera"/>
+                                <connections>
+                                    <action selector="actionClickOnCamera:" destination="ARR-os-E7b" eventType="touchUpInside" id="Qq7-Ph-WPx"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FQ6-Mq-jUh">
+                                <rect key="frame" x="20" y="117" width="335" height="374"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FQ6-Mq-jUh" firstAttribute="leading" secondItem="LjN-cH-cCb" secondAttribute="leading" constant="20" id="2nq-P8-ycv"/>
+                            <constraint firstItem="FQ6-Mq-jUh" firstAttribute="centerY" secondItem="LjN-cH-cCb" secondAttribute="centerY" constant="-29.5" id="D8q-0t-gYq"/>
+                            <constraint firstItem="FQ6-Mq-jUh" firstAttribute="top" secondItem="XwJ-Su-yAX" secondAttribute="bottom" constant="53" id="K3i-Tz-JgF"/>
+                            <constraint firstItem="FQ6-Mq-jUh" firstAttribute="centerX" secondItem="LjN-cH-cCb" secondAttribute="centerX" id="SGH-Yn-wbS"/>
+                            <constraint firstItem="lLb-dc-kS8" firstAttribute="trailing" secondItem="x0p-dX-JQb" secondAttribute="trailing" id="Tts-yc-Cft"/>
+                            <constraint firstItem="lLb-dc-kS8" firstAttribute="leading" secondItem="x0p-dX-JQb" secondAttribute="leading" id="W9Q-No-tXX"/>
+                            <constraint firstItem="lLb-dc-kS8" firstAttribute="centerX" secondItem="FQ6-Mq-jUh" secondAttribute="centerX" id="Z7E-Rk-ayp"/>
+                            <constraint firstAttribute="bottom" secondItem="x0p-dX-JQb" secondAttribute="bottom" constant="20" symbolic="YES" id="js6-Bn-mOe"/>
+                            <constraint firstItem="x0p-dX-JQb" firstAttribute="top" secondItem="lLb-dc-kS8" secondAttribute="bottom" constant="19" id="t9v-KC-QSn"/>
+                            <constraint firstAttribute="trailing" secondItem="FQ6-Mq-jUh" secondAttribute="trailing" constant="20" id="xne-ka-0dB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g5Y-WT-SeO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lvs-7m-O13"/>
+                    <connections>
+                        <outlet property="imgView" destination="FQ6-Mq-jUh" id="1ts-88-VYT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZu-gc-YvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="625" y="52"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="zTN-fM-HCr">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="1Oz-8H-1em" customClass="MainViewController" customModule="Beautify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bYo-eS-Aja">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yEx-Fu-YnY">
+                                <rect key="frame" x="20" y="117" width="335" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B72-dz-yWh">
+                                <rect key="frame" x="66" y="584" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Tools"/>
+                                <connections>
+                                    <action selector="goToToolsAction:" destination="1Oz-8H-1em" eventType="touchUpInside" id="XYp-qg-UHt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2D-gx-TWA">
+                                <rect key="frame" x="225" y="584" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Filters"/>
+                                <connections>
+                                    <action selector="goToFiltersAction:" destination="1Oz-8H-1em" eventType="touchUpInside" id="jWk-53-LzZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="CJA-01-iUl"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="yEx-Fu-YnY" id="Zkq-0s-1DB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uf3-cH-YCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1426" y="52"/>
+        </scene>
+        <!--Save View Controller-->
+        <scene sceneID="XSP-ER-3ls">
+            <objects>
+                <viewController storyboardIdentifier="SaveViewController" id="gKF-2x-Jhj" customClass="SaveViewController" customModule="Beautify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kaF-SQ-BpA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="875-Jk-0mK">
+                                <rect key="frame" x="112" y="232" width="150" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="saveToGallery:" destination="gKF-2x-Jhj" eventType="touchUpInside" id="7MP-x6-iL3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njz-UE-Hv8">
+                                <rect key="frame" x="102" y="361" width="170" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="shareToInstagram:" destination="gKF-2x-Jhj" eventType="touchUpInside" id="tRB-CH-hhD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84404188390000001" green="0.99153178929999997" blue="0.99413281679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="PDE-cD-V4L"/>
+                    </view>
+                    <connections>
+                        <outlet property="galleryButton" destination="875-Jk-0mK" id="yZG-fu-Icw"/>
+                        <outlet property="instagramButton" destination="Njz-UE-Hv8" id="4Ba-Bl-Pa3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rCn-CW-UGI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2213.5999999999999" y="51.724137931034484"/>
+        </scene>
+        <!--Filters View Controller-->
+        <scene sceneID="F53-AN-jJI">
+            <objects>
+                <viewController storyboardIdentifier="FiltersViewController" id="erI-M5-TZL" customClass="FiltersViewController" customModule="Beautify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="55E-4T-NNt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="veF-AO-5eq">
+                                <rect key="frame" x="20" y="65" width="335" height="374"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="butterfly" translatesAutoresizingMaskIntoConstraints="NO" id="9On-zd-Z0c">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="374"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v9W-Jt-6I1">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="374"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n3U-Sh-d2o">
+                                <rect key="frame" x="-3" y="547" width="380" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="veF-AO-5eq" firstAttribute="top" secondItem="jhn-Xr-7WV" secondAttribute="top" constant="53" id="aiP-qo-pcc"/>
+                            <constraint firstItem="jhn-Xr-7WV" firstAttribute="trailing" secondItem="veF-AO-5eq" secondAttribute="trailing" constant="20" id="kUV-hP-thX"/>
+                            <constraint firstItem="veF-AO-5eq" firstAttribute="leading" secondItem="jhn-Xr-7WV" secondAttribute="leading" constant="20" id="opM-89-MIl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jhn-Xr-7WV"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="veF-AO-5eq" id="lyu-38-st2"/>
+                        <outlet property="filtersScrollView" destination="n3U-Sh-d2o" id="Pnp-eM-MkE"/>
+                        <outlet property="imageToFilter" destination="v9W-Jt-6I1" id="plW-Uz-iku"/>
+                        <outlet property="originalImage" destination="9On-zd-Z0c" id="RvC-al-OHq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mtQ-xT-zjk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1425" y="758"/>
+        </scene>
+        <!--Crop View Controller-->
+        <scene sceneID="SxR-tE-E2E">
+            <objects>
+                <viewController storyboardIdentifier="CropViewController" id="8lL-Cl-Yym" customClass="CropViewController" customModule="Beautify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jvB-kF-FtB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hup-ee-82z" customClass="MSCropView" customModule="Beautify" customModuleProvider="target">
+                                <rect key="frame" x="20" y="69" width="339" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zi1-hp-pp0">
+                                        <rect key="frame" x="2" y="0.0" width="335" height="374"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="QQY-XQ-b9K"/>
+                    </view>
+                    <connections>
+                        <outlet property="cropView" destination="hup-ee-82z" id="hr9-t3-8FG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lK7-68-VUg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2213.5999999999999" y="757.87106446776613"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pxP-J3-yCi">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationPhotoViewController" automaticallyAdjustsScrollViewInsets="NO" id="mwH-ls-hbX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sfC-oU-BMb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ARR-os-E7b" kind="relationship" relationship="rootViewController" id="OTV-cu-c57"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UW4-NA-Iqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-151" y="52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="appTitle" width="268" height="87"/>
+        <image name="butterfly" width="894" height="893"/>
+        <image name="butterflyCropped" width="447" height="893"/>
+        <image name="butterflyCroppedTop" width="894" height="324"/>
+        <image name="effectsAndFilters" width="776" height="83"/>
+        <image name="getStarted" width="384" height="78"/>
+        <image name="makeitBeauty" width="629" height="83"/>
+        <image name="photoeEditApp" width="624" height="83"/>
+        <image name="welcometo" width="309" height="62"/>
+    </resources>
+</document>
